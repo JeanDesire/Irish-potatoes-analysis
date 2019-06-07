@@ -1,6 +1,6 @@
-# Created by: Arsene Gatera (arsene.gatera@oneacrefund.org)
-# PURPOSE: 17B RAY new seeds analysis
-# Prepared: September 18th 2017
+#Author: Jean Desire HABIYAMBERE
+# PURPOSE: Season 17B Irish potatoes new seeds analysis
+# Prepared: 07/06/2019
 
 rm(list=ls()) # this clears the r environment
 cat("\014") # this clears the screen
@@ -201,7 +201,7 @@ d$seed.cost.unit[d$cell=="Gati"&d$treatment.code=="A"&is.na(d$seed.cost.unit)] =
 
 # - Fresh tuber revenues in harvest
 table(d$q144b_revenue1_frw_kg, useNA = "ifany") 
-# I have viewed 2 typos. To solve them I refered on the original dataset, for 2 farmers Uruvugundi alphoncine,Uwimana Gérard
+# I have viewed 2 typos. To solve them I refered on the original dataset, for 2 farmers Uruvugundi alphoncine,Uwimana GÃ©rard
 
 # to compare the typo with the value reported on the same farmer
 d$q144b_revenue1_frw_kg <- recode(d$q144b_revenue1_frw_kg,"8=0;
